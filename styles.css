@@ -1,0 +1,254 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+**/
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Geologica', sans-serif;
+}
+
+:root {
+    --yel: #f6bd60;
+    --cre: #f7ede2;
+    --pink: #f5cac3;
+    --teal: #84a59d;
+    --blk: #08121d;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    color: var(--blk);
+    background-color: var(--cre);
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+/*************
+General styling / Elements
+**************/
+
+/*************
+Images
+**************/
+
+img {
+    width: 100px;
+}
+
+/*************
+Buttons / Links / li
+**************/
+
+a,
+button {
+    font-family: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--cre);
+}
+
+a:hover {
+    color: var(--yel);
+}
+
+/*************
+Typography
+**************/
+
+/* 
+font-family: 'Cinzel', serif;
+400
+
+font-family: 'Geologica', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Prompt', sans-serif; 
+300, 400, 500
+*/
+
+.thin {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+
+/*************
+Layout
+**************/
+
+.hero-container {
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("Norwich Photos/CathedralAerialUnderPaint.jpg");
+    background-size: cover;
+    background-position: 0 -100px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2rem;
+    font-size: 4.5rem;
+    color: var(--cre);
+    text-shadow: 0 0 5px black;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    color: var(--yel);
+    text-shadow: 0 0 2px black;
+}
+
+
+
+#fine-city {
+    padding: 5px 15px 5px 28px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.25rem;
+    letter-spacing: 1.25rem;
+    text-shadow: none;
+    color: var(--cre);
+    background-color: var(--yel);
+}
+
+.picks-container {
+    height: 378px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 50px 50px 50px;
+    gap: 50px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--teal);
+    margin-bottom: 30px;
+}
+
+h4 {
+    margin: 20px;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+}
+
+p{
+    font-size: 12px;
+}
+
+.picks-info {
+    width: 250px;
+}
+
+.picks-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px var(--yel);
+    transition: 0.3s;
+}
+
+.picks-info img:hover {
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+.guide-container {
+    height: 394px;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.business-card {
+    width: 400px;
+    height:294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yel);
+    border-radius: 10px;
+    border-bottom: 10px solid var(--cre)
+}
+
+#pfp {
+    height: 248px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-text {
+    max-width: 190px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 640px) {
+
+}
+
+
+@media (orientation: landscape) and (min-width: 400px) {
+
+}
